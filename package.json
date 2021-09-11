@@ -1,0 +1,50 @@
+{
+  "name": "animated-waffle",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "async": "^3.2.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "jquery": "^3.6.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "together": "concurrently \"nodemon server/server.js\" \"npm run start\"",
+    "prebuild": "node scripts/clean.js",
+    "build": "react-scripts build",
+    "postbuild": "node scripts/move-build.js",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001"
+}
