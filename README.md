@@ -1,6 +1,4 @@
-# Express.js + Node.js + React.js Starting Template
-
-## Available Scripts
+## Scripts
 In the project directory, you can run:
 
 ### `npm start` 
