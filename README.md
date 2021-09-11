@@ -1,3 +1,6 @@
+The server does not have any working endpoints, just sample files showing how the services, models, and routers connect
+The frontend is the create-react-app template
+
 ## Scripts
 In the project directory, you can run:
 
